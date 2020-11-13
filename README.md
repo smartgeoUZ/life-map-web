@@ -1,4 +1,4 @@
-# my-project
+# Life map web application
 
 ## Project setup
 ```
