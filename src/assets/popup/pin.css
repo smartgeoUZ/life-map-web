@@ -1,0 +1,135 @@
+/*body
+{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	line-height: 20px;
+	color: #333333;
+	min-width: 1024px;
+	min-height: 768px;
+}*/
+
+#personBox {
+  z-index: 10000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /*float:none;*/
+}
+
+.box {
+  /*margin:5px auto;*/
+
+  min-width: 320px;
+  color: #333333;
+  font-size: 11px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  height: auto;
+}
+
+.pinToPoint {
+  /*border:1px solid #333;*/
+  background: #fbfef8;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  /*box-shadow: 0 0 5px #000000;*/
+  /*opacity: 0.8;*/
+  padding: 5px 10px;
+  /*position: relative;*/
+
+}
+
+.pinToPoint .objectTitle {
+  display: flex;
+  background: url(../../images/chrysler.png) no-repeat 0 center;
+  border-bottom: 1px solid #696969;
+  font-size: 16px;
+  margin: 0;
+  padding: 10px 0 10px 75px;
+}
+
+.pinToPoint .objectData {
+  width: 300px;
+  display: grid;
+  list-style: none;
+  border-top: 1px solid #eefddf;
+  /*margin: 0 0 10px;*/
+  padding: 5px;
+  margin-bottom: 0;
+}
+
+.pinToPoint .objectData li {
+  border-bottom: 1px dashed #E4E4E4;
+  border-top: 1px dashed #CCCCCC;
+  margin-top: -1px;
+ /*padding: 3px 0;*/
+  line-height: 16px;
+}
+
+.pinToPoint .objectData li label {
+  margin: 0;
+  display: inline-block;
+  width: 150px;
+}
+
+.pinToPoint .objectData li span {
+  font-weight: bold;
+  margin-left: 5px;
+  display: block;
+  float: right;
+  width: 130px;
+}
+
+.pinToPoint .objectData li span.person {
+  float: right;
+  width: 114px;
+}
+
+.pinToPoint .objectData li span img {
+  width: 125px;
+  margin: 5px 0 0 5px;
+  /*height: 30px;*/
+}
+
+/*.arrow*/
+/*{*/
+/*background:url(../../images/pin.png) no-repeat 5px 0;*/
+/*display: inline-block;*/
+/*height: 11px;*/
+/*margin-top: -1px;*/
+/*width: 53px;*/
+/*}*/
+
+.pinToPoint .remove {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: 5px;
+  color: #555;
+}
+
+.clear {
+  clear: both;
+}
+
+#personBox .pinToPoint .personCard {
+  padding: 20px 15px 0;
+}
+
+#personBox .pinToPoint .personCard p {
+  float: left;
+  font-size: 16px;
+  width: 150px;
+}
+
+#personBox .pinToPoint .personCard img,
+#personBox .pinToPoint .personCard i.icon-user {
+  float: right;
+  width: 50px;
+  /*height: 50px;*/
+  margin: 10px 5px 0 5px;
+}
+
+#personBox .pinToPoint .personCard i.icon-user {
+  text-align: center;
+  font-size: 50px;
+}
